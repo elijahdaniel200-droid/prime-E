@@ -1,0 +1,290 @@
+/* ==========================================================================
+   PRIME-E Corporate Maritime Website - Custom CSS & Design System
+   Brand Identity:
+   - Primary: Deep Oceanic Navy (#0B2545 / #0D1F3C)
+   - Accent Color: Marine Coastal Blue / Teal (#007799 / #0096C7 / #00B4D8)
+   - Highlight Accent: Maritime Amber/Orange (#E07A5F)
+   - Backgrounds: Clean White (#FFFFFF), Off-white (#F8FAFC), Light Cyan (#F0F7FA)
+   - Typography: 
+       Headings & Logo: High-contrast Serif (Cinzel / Playfair Display)
+       Body & UI: Modern Sans-serif (Plus Jakarta Sans)
+   - Tagline: "...Anchored in value"
+   ========================================================================== */
+
+:root {
+  --color-primary-navy: #0B2545;
+  --color-primary-navy-dark: #06152B;
+  --color-primary-navy-deep: #040D1A;
+  --color-primary-authority: #0D1F3C;
+  --color-accent-teal: #007799;
+  --color-accent-teal-light: #0096C7;
+  --color-accent-cyan: #00B4D8;
+  --color-highlight-amber: #E07A5F;
+  --color-highlight-amber-dark: #C96247;
+  --color-cyan-tint: #F0F7FA;
+  --color-offwhite: #F8FAFC;
+  --color-pure-white: #FFFFFF;
+  --color-slate-muted: #64748B;
+  --color-slate-dark: #334155;
+  --color-gold-accent: #EAB308;
+}
+
+/* Smooth scrolling with sticky header offset */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+section, [id] {
+  scroll-margin-top: 5.5rem;
+}
+
+body {
+  background-color: var(--color-offwhite);
+  color: #1E293B;
+  overflow-x: hidden;
+}
+
+/* High-Contrast Maritime Serif for Headings & Authority Surfaces */
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+  letter-spacing: 0.01em;
+}
+
+.font-serif-maritime {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-brand-cinzel {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.04em;
+}
+
+/* Maritime Amber Highlight Accents */
+.badge-amber {
+  background-color: rgba(224, 122, 95, 0.14);
+  color: #E07A5F;
+  border: 1px solid rgba(224, 122, 95, 0.35);
+}
+
+.bg-maritime-amber {
+  background-color: #E07A5F;
+}
+
+.text-maritime-amber {
+  color: #E07A5F;
+}
+
+.border-maritime-amber {
+  border-color: #E07A5F;
+}
+
+.btn-amber-dispatch {
+  background-color: #E07A5F;
+  color: #FFFFFF;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(224, 122, 95, 0.3);
+}
+
+.btn-amber-dispatch:hover {
+  background-color: #C96247;
+  box-shadow: 0 6px 20px rgba(224, 122, 95, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #06152B;
+}
+::-webkit-scrollbar-thumb {
+  background: #007799;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0096C7;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-panel-dark {
+  background: rgba(11, 37, 69, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 150, 199, 0.25);
+}
+
+.glass-nav {
+  background: rgba(11, 37, 69, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Hero Maritime Overlay */
+.hero-gradient-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(4, 13, 26, 0.92) 0%,
+    rgba(11, 37, 69, 0.82) 45%,
+    rgba(0, 119, 153, 0.55) 100%
+  );
+}
+
+/* Subtle Animated Wave Background */
+.wave-pattern {
+  background-image: radial-gradient(rgba(0, 150, 199, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Nautical Beacon Pulse */
+@keyframes beacon-pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 180, 216, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 12px rgba(0, 180, 216, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 180, 216, 0);
+  }
+}
+
+.beacon-pulse {
+  animation: beacon-pulse 2.2s infinite ease-in-out;
+}
+
+/* Floating animation */
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float-gentle 5s ease-in-out infinite;
+}
+
+/* Card Hover Elevation & Border Glow */
+.service-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #E2E8F0;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0B2545, #0096C7, #00B4D8);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px -10px rgba(11, 37, 69, 0.15), 0 10px 15px -5px rgba(0, 119, 153, 0.1);
+  border-color: #0096C7;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+/* Custom Button Hover Ripple / Glow */
+.btn-primary-navy {
+  background-color: var(--color-primary-navy);
+  color: #FFFFFF;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(11, 37, 69, 0.25);
+}
+
+.btn-primary-navy:hover {
+  background-color: var(--color-accent-teal);
+  box-shadow: 0 6px 20px rgba(0, 119, 153, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-outline-teal {
+  border: 2px solid var(--color-accent-teal-light);
+  color: var(--color-accent-teal-light);
+  transition: all 0.25s ease;
+}
+
+.btn-outline-teal:hover {
+  background-color: var(--color-accent-teal-light);
+  color: #FFFFFF;
+  box-shadow: 0 4px 16px rgba(0, 150, 199, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Custom Accents */
+.border-oceanic {
+  border-color: #0B2545;
+}
+
+.text-oceanic {
+  color: #0B2545;
+}
+
+.bg-cyan-tint {
+  background-color: #F0F7FA;
+}
+
+/* High Contrast & Accessibility Helpers */
+.focus-ring:focus-visible {
+  outline: 3px solid #0096C7;
+  outline-offset: 3px;
+}
+
+/* Interactive Calculator Tabs */
+.calc-tab.active {
+  background-color: #0B2545;
+  color: #FFFFFF;
+  border-color: #0B2545;
+}
+
+/* Fleet & Vessel Explorer Styles */
+.fleet-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid #E2E8F0;
+}
+
+.fleet-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px -10px rgba(11, 37, 69, 0.18), 0 8px 12px -4px rgba(0, 150, 199, 0.12);
+  border-color: #0096C7;
+}
+
+.fleet-filter-btn.active {
+  background-color: #0B2545;
+  color: #FFFFFF;
+  border-color: #0B2545;
+  box-shadow: 0 4px 14px rgba(11, 37, 69, 0.2);
+}
+
+.spec-badge {
+  background: rgba(240, 247, 250, 0.9);
+  border: 1px solid rgba(0, 150, 199, 0.2);
+}
+
+
+
