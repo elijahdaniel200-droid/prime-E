@@ -1,5 +1,5 @@
 /**
- * PRIME-E - Maritime & Blue Economy Enterprise
+ * Prime E Global Limited - Maritime & Blue Economy Enterprise
  * Core JavaScript Operations & Interactivity
  */
 
@@ -118,7 +118,7 @@ const serviceData = {
     title: 'Marine Asset Ownership & Management',
     tagline: 'Vessel Lifecycle Governance, Asset Security & Flag State Compliance',
     badge: 'Core Competency',
-    overview: 'PRIME-E operates an integrated marine asset management framework tailored for commercial vessel owners, private operators, and maritime charterers across the Gulf of Guinea.',
+    overview: 'Prime E Global Limited operates an integrated marine asset management framework tailored for commercial vessel owners, private operators, and maritime charterers across the Gulf of Guinea.',
     highlights: [
       'Fleet acquisition, technical survey, and condition appraisal',
       'Preventive hull maintenance, dry-docking scheduling, and class renewal',
@@ -178,7 +178,7 @@ const serviceData = {
     title: 'Maritime Logistics & Offshore Support',
     tagline: 'Supply Base Management, Offshore Replenishment & Terminal Support',
     badge: 'Integrated Supply Chain',
-    overview: 'PRIME-E delivers end-to-end maritime logistics services ensuring offshore installations, deep-sea vessels, and coastal industries maintain uninterrupted operational uptime.',
+    overview: 'Prime E Global Limited delivers end-to-end maritime logistics services ensuring offshore installations, deep-sea vessels, and coastal industries maintain uninterrupted operational uptime.',
     highlights: [
       'Offshore rig replenishment (potable water, provisions, deck equipment, spares)',
       'Bonded marine storage, freight forwarding, and customs clearance liaison',

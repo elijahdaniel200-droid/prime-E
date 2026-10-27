@@ -1,7 +1,7 @@
-# PRIME-E: Maritime & Blue-Economy Enterprise
+# Prime E Global Limited: Maritime & Blue-Economy Enterprise
 **Akwa Ibom State, Nigeria**
 
-A modern corporate portal for **PRIME-E Global Ltd**, advancing sustainable maritime logistics, deep seaport facilitation, bunkering operations, offshore engineering, aquaculture, and ocean governance across the Gulf of Guinea.
+A modern corporate portal for **Prime E Global Limited**, advancing sustainable maritime logistics, deep seaport facilitation, bunkering operations, offshore engineering, aquaculture, and ocean governance across the Gulf of Guinea.
 
 ---
 
@@ -61,4 +61,4 @@ PRIME E/
 ---
 
 ## 📜 License
-PRIME-E Global Ltd. All rights reserved.
+Prime E Global Limited. All rights reserved.

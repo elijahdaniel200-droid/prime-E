@@ -1,7 +1,7 @@
 {
   "name": "prime-e-maritime",
   "version": "1.0.0",
-  "description": "PRIME-E - Maritime & Blue-Economy Enterprise, Akwa Ibom State, Nigeria",
+  "description": "Prime E Global Limited - Maritime & Blue-Economy Enterprise, Akwa Ibom State, Nigeria",
   "main": "serve.js",
   "scripts": {
     "start": "node serve.js",
@@ -14,6 +14,6 @@
     "nigeria",
     "prime-e"
   ],
-  "author": "PRIME-E Global Ltd",
+  "author": "Prime E Global Limited",
   "license": "ISC"
 }
